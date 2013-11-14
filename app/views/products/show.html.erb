@@ -1,0 +1,4 @@
+<%= @product['name'] %><br>
+<%= format_price @product['price_in_cents'] %><br>
+<!-- want link of stroes available, or at the very least links of locations near you -->
+<%= link_to "Look at all the stores with this product", product_stores_path(@product['id']) %><br>

@@ -1,0 +1,17 @@
+<%= form_tag locations_path, :method => :get do %>
+  <p>
+  	<%= text_field_tag :search, params[:search] %>
+  	<%= submit_tag "Search Nearby Me", :name=>nil %>
+<% end %>
+
+
+<% if @cat %>
+	<% @stores.each do |store| %>
+  		<%= store['name'] %><br>
+	<% end %>
+<% else %>
+	<% @stores.each do |store| %>
+  		<%= store['name'] %><br>
+	<% end %>
+<% end %>
+<!-- google maps based on current location nearby! -->
