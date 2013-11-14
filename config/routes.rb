@@ -14,6 +14,10 @@ Connoisseur::Application.routes.draw do
 
   resources :locations
 
+  get "products_path" => "products#index"
+  get "stores_path" => "stores#index"
+  get "welcome_path" => "welcome#index"
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -2,11 +2,20 @@
 <html>
 <head>
   <title>Connoisseur</title>
+  <link rel="stylesheet" href="assets/stylesheets/bootstrap.css">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+	<ul class="nav nav-tabs">
+	<li>
+		<a href="welcome_path">Home</a></li>
+		<li><a href="products_path">Products</a></li>
+		<li><a href="stores_path">Stores</a></li>
+</ul>
+
 
 <%= yield %>
 
